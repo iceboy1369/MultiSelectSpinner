@@ -9,6 +9,7 @@ import android.content.DialogInterface.OnCancelListener;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -168,7 +169,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 		else
 			spinnerText = this.getHintText();
 
-		ArrayAdapter<String> adapterSpinner = new ArrayAdapter<String>(getContext(), R.layout.textview_for_spinner, new String[]{spinnerText});
+		ArrayAdapter<String> adapterSpinner = new ArrayAdapter(getContext(), R.layout.textview_for_spinner, new String[]{spinnerText});
 		setAdapter(adapterSpinner);
 
 		if (adapter != null)
@@ -176,17 +177,17 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 
 		listener.onItemsSelected(selectedData);
 
-		/**
+		/*
 		 * To hide dropdown which is already opened at the time of performClick...
 		 * This code will hide automatically and no need to tap by user.
 		 */
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
+		final Handler handler = new Handler();
+		handler.postDelayed(() ->{
+			new Thread(() -> {
 				Instrumentation inst = new Instrumentation();
 				inst.sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);
-			}
-		}).start();
+			}).start();
+		} , 50);
 	}
 
 	@Override
@@ -235,7 +236,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 			editText.setVisibility(GONE);
 		}
 
-		/**
+		/*
 		 * For selected items
 		 */
 		selected = 0;
@@ -248,7 +249,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
         Added Select all Dialog Button.
          */
 		if (isShowSelectAllButton && limit == -1) {
-			builder.setNeutralButton(android.R.string.selectAll, (dialog, which) -> {
+			builder.setNeutralButton(R.string.selectAll, (dialog, which) -> {
 				for (int i = 0; i < adapter.arrayList.size(); i++) {
 					adapter.arrayList.get(i).setSelected(true);
 				}
@@ -258,27 +259,37 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 			});
 		}
 
-		builder.setPositiveButton(android.R.string.ok, (dialog, which) -> {
+		builder.setPositiveButton(R.string.ok, (dialog, which) -> {
 			//Log.i(TAG, " ITEMS : " + items.size());
 			dialog.cancel();
 		});
 
-		builder.setNegativeButton(clearText, new DialogInterface.OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				//Log.i(TAG, " ITEMS : " + items.size());
-				for (int i = 0; i < adapter.arrayList.size(); i++) {
-					adapter.arrayList.get(i).setSelected(false);
-				}
-				adapter.notifyDataSetChanged();
-				dialog.cancel();
+		builder.setNegativeButton(clearText, (dialog, which) -> {
+			//Log.i(TAG, " ITEMS : " + items.size());
+			for (int i = 0; i < adapter.arrayList.size(); i++) {
+				adapter.arrayList.get(i).setSelected(false);
 			}
+			adapter.notifyDataSetChanged();
+			dialog.cancel();
 		});
 
 		builder.setOnCancelListener(this);
 		ad = builder.show();
 		Objects.requireNonNull(ad.getWindow()).setLayout(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 		return true;
+	}
+
+	public void setItems(String[] items, boolean selectionDefault, MultiSpinnerListener listener) {
+
+		final List<KeyPairBoolData> list = new ArrayList<>();
+		for (int i = 0; i < items.length; i++) {
+			KeyPairBoolData h = new KeyPairBoolData();
+			h.setId(i + 1);
+			h.setName(items[i]);
+			h.setSelected(selectionDefault);
+			list.add(h);
+		}
+		setItems(list, listener);
 	}
 
 	public void setItems(List<KeyPairBoolData> items, MultiSpinnerListener listener) {

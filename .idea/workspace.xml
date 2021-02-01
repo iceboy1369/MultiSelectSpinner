@@ -17,18 +17,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08fe6335-ddf0-4e74-b364-7a7bdf45ce38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/androidbuts/sample/MainDataBindingActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/res/layout/activity_main_data_binding.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/library/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="HA13VF5Q" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[3204572a0c3e7149]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -68,20 +71,22 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DEBUGGABLE_DEVICE" value="New_Device_1_API_28 [emulator-5554]" />
+    <property name="DEBUGGABLE_DEVICE" value="samsung-sm_t705-3204572a0c3e7149" />
     <property name="DEBUGGABLE_PROCESS" value="com.androidbuts.sample" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="New_Device_1_API_28" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-08-28T05:04:17.701Z" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="android-custom-viewC:/Users/movahediyan/AndroidStudioProjects/MultiSelectSpinner/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java_SELECTED" value="MultiSpinnerSearch" />
     <property name="device.picker.selection" value="90ffee42" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="multi-representation-previewC:/Users/movahediyan/AndroidStudioProjects/MultiSelectSpinner/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -120,12 +125,13 @@
       </method>
     </configuration>
     <configuration name="sample" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="sample" />
+      <module name="MultiSelectSpinner.sample" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -161,11 +167,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sampled (Java)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -212,175 +223,57 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dynamic Change text of Filter Hint &quot;Type Search&quot; and text of &quot;Not Found&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="Dynamic Change text of Filter Hint &quot;Type Search&quot; and text of &quot;Not Found&quot;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="200" y="96" key="#PSD" timestamp="1598522492583">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="598" y="176" key="AndroidProcessChooserDialog" timestamp="1612176432823">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="200" y="96" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1598522492583" />
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1598590890520">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="598" y="176" key="AndroidProcessChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1612176432823" />
+    <state width="1557" height="294" key="GridCell.Tab.0.bottom" timestamp="1612176744896">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1598590890520" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598591849661">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="294" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1612176744896" />
+    <state width="1557" height="294" key="GridCell.Tab.0.center" timestamp="1612176744895">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598591849661" />
-    <state x="393" y="201" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599730489997">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="294" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1612176744895" />
+    <state width="1557" height="294" key="GridCell.Tab.0.left" timestamp="1612176744895">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="393" y="201" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1599730489997" />
-    <state x="538" y="129" key="AndroidProcessChooserDialog" timestamp="1599820271636">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="294" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1612176744895" />
+    <state width="1557" height="294" key="GridCell.Tab.0.right" timestamp="1612176744896">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="538" y="129" key="AndroidProcessChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1599820271636" />
-    <state x="235" y="0" key="CommitChangelistDialog2" timestamp="1601559035839">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="294" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1612176744896" />
+    <state width="1557" height="221" key="GridCell.Tab.1.bottom" timestamp="1612176558038">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="235" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1601559035839" />
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1601558528138">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="221" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1612176558038" />
+    <state width="1557" height="221" key="GridCell.Tab.1.center" timestamp="1612176558038">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1601558528138" />
-    <state x="463" y="104" key="FileChooserDialogImpl" timestamp="1599828804413">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="221" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1612176558038" />
+    <state width="1557" height="221" key="GridCell.Tab.1.left" timestamp="1612176558038">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="463" y="104" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599828804413" />
-    <state width="1323" height="131" key="GridCell.Tab.0.bottom" timestamp="1601558505985">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="221" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1612176558038" />
+    <state width="1557" height="221" key="GridCell.Tab.1.right" timestamp="1612176558038">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1323" height="131" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601558505985" />
-    <state width="1323" height="131" key="GridCell.Tab.0.center" timestamp="1601558505985">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="221" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1612176558038" />
+    <state x="507" y="163" width="585" height="534" key="find.popup" timestamp="1612171540189">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1323" height="131" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601558505985" />
-    <state width="1323" height="131" key="GridCell.Tab.0.left" timestamp="1601558505985">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="131" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601558505985" />
-    <state width="1323" height="131" key="GridCell.Tab.0.right" timestamp="1601558505985">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="131" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601558505985" />
-    <state width="1323" height="207" key="GridCell.Tab.1.bottom" timestamp="1599820326645">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599820326645" />
-    <state width="1323" height="207" key="GridCell.Tab.1.center" timestamp="1599820326645">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1599820326645" />
-    <state width="1323" height="207" key="GridCell.Tab.1.left" timestamp="1599820326645">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1599820326645" />
-    <state width="1323" height="207" key="GridCell.Tab.1.right" timestamp="1599820326645">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1599820326645" />
-    <state width="1323" height="207" key="GridCell.Tab.2.bottom" timestamp="1599820326645">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599820326645" />
-    <state width="1323" height="207" key="GridCell.Tab.2.center" timestamp="1599820326645">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1599820326645" />
-    <state width="1323" height="207" key="GridCell.Tab.2.left" timestamp="1599820326645">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1599820326645" />
-    <state width="1323" height="207" key="GridCell.Tab.2.right" timestamp="1599820326645">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1599820326645" />
-    <state x="417" y="334" key="ScreenshotRecorder.Options.Dimensions" timestamp="1599828685780">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="417" y="334" key="ScreenshotRecorder.Options.Dimensions/0.0.1366.728@0.0.1366.728" timestamp="1599828685780" />
-    <state x="0" y="0" key="ScreenshotViewer.Dimensions" timestamp="1599827441160">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="0" y="0" key="ScreenshotViewer.Dimensions/0.0.1366.728@0.0.1366.728" timestamp="1599827441160" />
-    <state width="624" height="448" key="SwitcherDM" timestamp="1600151343079">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="624" height="448" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1600151343079" />
-    <state x="196" y="112" key="caller.chooser.dialog" timestamp="1599731096198">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="196" y="112" key="caller.chooser.dialog/0.0.1366.728@0.0.1366.728" timestamp="1599731096198" />
-    <state x="378" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1599799843011">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="378" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1599799843011" />
-    <state x="290" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599729688920">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="290" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1599729688920" />
-    <state x="472" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601558913831">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="472" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1601558913831" />
-    <state width="300" height="109" key="javadoc.popup.new" timestamp="1603259127794">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="300" height="109" key="javadoc.popup.new/0.0.1440.900/1440.-124.1920.1080@0.0.1440.900" timestamp="1603259127794" />
-    <state x="339" y="16" width="672" height="676" key="search.everywhere.popup" timestamp="1599816957188">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="16" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1599816957188" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>381</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>383</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>384</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>385</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>386</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>387</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>388</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="507" y="163" width="585" height="534" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1612171540189" />
   </component>
 </project>
