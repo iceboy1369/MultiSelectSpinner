@@ -21,7 +21,7 @@ Click to see video of example:
 
 ## Add dependency in build.gradle
 
-    implementation 'com.github.pratikbutani:MultiSelectSpinner:-SNAPSHOT'
+    implementation 'com.github.pratikbutani:MultiSelectSpinner:1.2'
 
 ## Recent Changes
 
@@ -113,6 +113,18 @@ Click to see video of example:
         	//A text that will display in clear text button
 		multiSelectSpinnerWithSearch.setClearText("Close & Clear");
 		
+		// Create KeyPairBoolData list
+		boolean needToCheckAll = false
+		String[] items = { "Abundance","Anxiety","Bruxism","Discipline","Drug Addiction"};
+		final List<KeyPairBoolData> listArray1 = new ArrayList<>();
+		for (int i = 0; i < items.length; i++) {
+		    KeyPairBoolData h = new KeyPairBoolData();
+		    h.setId(i + 1);
+		    h.setName(items[i]);
+		    h.setSelected(needToCheckAll);
+		    listArray1.add(h);
+		}
+	
 		// Removed second parameter, position. Its not required now..
 		// If you want to pass preselected items, you can do it while making listArray,
 		// pass true in setSelected of any item that you want to preselect
@@ -126,7 +138,26 @@ Click to see video of example:
 				}
 			}
 		});
-
+		
+		OR
+		
+		String[] items = { "Abundance","Anxiety","Bruxism","Discipline","Drug Addiction"};
+		boolean needToCheckAll = false
+		multiSelectSpinnerWithSearch.setItems(items, needToCheckAll, new MultiSpinnerListener() {
+			@Override
+			public void onItemsSelected(List<KeyPairBoolData> items) {
+				String selected = "";
+				for (int i = 0; i < items.size(); i++) {
+                    			if (items.get(i).isSelected()) {
+                        			selected = selected + " : " + items.get(i).getName() + " : " + items.get(i).isSelected() + "\n";
+                    			}
+                		}
+               			Toast.makeText(App.getActivity(), selected, Toast.LENGTH_SHORT).show();
+			}
+		});
+		
+		
+		
 		/**
 		 * If you want to set limit as maximum item should be selected is 2.
 		 * For No limit -1 or do not call this method.
@@ -139,16 +170,3 @@ Click to see video of example:
 						"Limit exceed ", Toast.LENGTH_LONG).show();
 			}
 		});
-
-## Awesome contributors :star_struck:
-<a href="https://github.com/pratikbutani/MultiSelectSpinner/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=pratikbutani/MultiSelectSpinner" />
-</a>
-
-Made with [contributors-img](https://contributors-img.web.app).
-
-
-## Buy a cup of coffee
-If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of ☕️ [PayPal](http://paypal.me/androidbuts)
-
-### Do not forget to give star If its useful to you. :)
