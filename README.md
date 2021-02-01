@@ -146,11 +146,11 @@ Click to see video of example:
 			public void onItemsSelected(List<KeyPairBoolData> items) {
 				String selected = "";
 				for (int i = 0; i < items.size(); i++) {
-                    			if (items.get(i).isSelected()) {
+                    		     if (items.get(i).isSelected()) {
                         			selected = selected + " : " + items.get(i).getName() + " : " + items.get(i).isSelected() + "\n";
-                    			}
+                    		     }
                 		}
-               			Toast.makeText(App.getActivity(), selected, Toast.LENGTH_SHORT).show();
+               		Toast.makeText(App.getActivity(), selected, Toast.LENGTH_SHORT).show();
 			}
 		});
 		
