@@ -18,8 +18,7 @@
   <component name="ChangeListManager">
     <list default="true" id="08fe6335-ddf0-4e74-b364-7a7bdf45ce38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/src/main/res/layout/textview_for_spinner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/res/layout/textview_for_spinner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/src/main/res/values-sw600dp/dimensions_fonts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/library/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
     <property name="android-custom-viewC:/Users/movahediyan/AndroidStudioProjects/MultiSelectSpinner/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java_SELECTED" value="MultiSpinnerSearch" />
     <property name="device.picker.selection" value="90ffee42" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="multi-representation-previewC:/Users/movahediyan/AndroidStudioProjects/MultiSelectSpinner/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java_selected" value="" />
+    <property name="multi-representation-previewC:/Users/movahediyan/AndroidStudioProjects/MultiSelectSpinner/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
