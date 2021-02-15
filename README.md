@@ -19,7 +19,7 @@ Click to see video of example:
 
 ## Add dependency in build.gradle
 
-    implementation 'com.github.iceboy1369:MultiSelectSpinner:1.2'
+    implementation 'com.github.iceboy1369:MultiSelectSpinner:1.2.1'
 
 ## Recent Changes
 
